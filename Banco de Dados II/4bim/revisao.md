@@ -199,6 +199,7 @@ Um pacote é um objeto de esquema que agrupa logicamente tipos, variáveis e sub
 
 ### Sintaxe
 
+Declaração da Especificação:
 ```sql
 CREATE [OR REPLACE] PACKAGE nome_do_pacote
 IS | AS
@@ -207,6 +208,20 @@ IS | AS
 END [nome_do_pacote];
 ```
 
+Declaração do Corpo:
+```sql
+CREATE [OR REPLACE] PACKAGE BODY nome_do_pacote
+IS | AS
+    todo o código do seu subprograma
+END [nome_do_pacote]
+```
+
+A chamada de um subprograma dentro do pacote ocorre da seguinte forma:
+    
+    `execute nome_do_pacote.nome_do_subprograma(p1,p2);`
+
 ## Triggers
 
 Mano, foram uns 8 trabalhos apresentados de triggers, não me faz escrever mais não.
+
+Pasta com os trabs: https://drive.google.com/drive/folders/1PmPlWhWqQeHkaP6SOVAuFK_Hm5ADcmNl
